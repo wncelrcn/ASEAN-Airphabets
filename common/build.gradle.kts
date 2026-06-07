@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kusho.common"
+    namespace = "com.example.airphabets.common"
     compileSdk = 36
 
     defaultConfig {

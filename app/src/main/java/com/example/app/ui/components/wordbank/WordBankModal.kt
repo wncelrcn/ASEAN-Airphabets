@@ -3,6 +3,7 @@ package com.example.app.ui.components.wordbank
 import android.net.Uri
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -176,6 +177,7 @@ private fun MediaUploadSection(
 /**
  * Word input section with label and text field.
  */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun WordInputSection(
     wordInput: String,

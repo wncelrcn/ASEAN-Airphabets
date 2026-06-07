@@ -19,7 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Kusho"
+rootProject.name = "Airphabets"
 include(":wear")
 include(":app")
 include(":common")

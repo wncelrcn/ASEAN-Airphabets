@@ -73,7 +73,7 @@ fun WatchPairingScreen(
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = "Make sure that the smartwatch you want to add has Bluetooth turned on. Make sure that you have the Kusho' Wearable App installed.",
+            text = "Make sure that the smartwatch you want to add has Bluetooth turned on. Make sure that you have the Airphabets Wearable App installed.",
             fontSize = 14.sp,
             color = Color(0xFF2D2D2D),
             textAlign = TextAlign.Center,
