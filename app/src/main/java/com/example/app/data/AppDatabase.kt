@@ -88,7 +88,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun videoTutorialDao(): VideoTutorialDao
 
     companion object {
-        private const val DATABASE_NAME = "kusho_database"
+        private const val DATABASE_NAME = "airphabets_database"
 
         @Volatile
         private var INSTANCE: AppDatabase? = null

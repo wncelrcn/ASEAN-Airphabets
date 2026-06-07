@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kusho"
+    namespace = "com.example.airphabets"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.kusho"
+        applicationId = "com.example.airphabets"
         minSdk = 30
         targetSdk = 36
         versionCode = 1

@@ -167,12 +167,12 @@ fun DashboardScreen(
             if (showInstallInstructionsDialog) {
                 AlertDialog(
                     onDismissRequest = { showInstallInstructionsDialog = false },
-                    title = { Text(text = "Install Kusho Watch App", fontWeight = FontWeight.Bold) },
-                    text = { 
+                    title = { Text(text = "Install Airphabets Watch App", fontWeight = FontWeight.Bold) },
+                    text = {
                         Text(
-                            text = "To use Kusho with your watch:\n\n" +
+                            text = "To use Airphabets with your watch:\n\n" +
                                    "1. Open Play Store on your watch\n" +
-                                   "2. Search for \"Kusho\"\n" +
+                                   "2. Search for \"Airphabets\"\n" +
                                    "3. Install the app\n\n" +
                                    "Once installed, your watch will connect automatically."
                         )
@@ -389,7 +389,7 @@ fun DashboardScreen(
                                     text = when (watchDevice.connectionState) {
                                         ConnectionState.WATCH_CONNECTED -> "Connected"
                                         ConnectionState.WATCH_NEEDS_HANDSHAKE -> "Open watch app and tap connect"
-                                        ConnectionState.WATCH_PAIRED_NO_APP -> "Install Kusho app on watch"
+                                        ConnectionState.WATCH_PAIRED_NO_APP -> "Install Airphabets app on watch"
                                         ConnectionState.BLUETOOTH_OFF -> "Turn on Bluetooth"
                                         ConnectionState.NO_WATCH -> "Tap to connect"
                                     },

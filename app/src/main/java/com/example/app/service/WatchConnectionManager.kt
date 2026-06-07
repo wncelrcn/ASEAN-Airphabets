@@ -156,7 +156,7 @@ class WatchConnectionManager private constructor(private val context: Context) {
         @Volatile
         private var INSTANCE: WatchConnectionManager? = null
         private const val TAG = "WatchConnectionMgr"
-        private const val NOTIFICATION_CHANNEL_ID = "kusho_watch_install"
+        private const val NOTIFICATION_CHANNEL_ID = "airphabets_watch_install"
         private const val NOTIFICATION_ID_INSTALL_APP = 1001
         
         fun getInstance(context: Context): WatchConnectionManager {
@@ -167,19 +167,19 @@ class WatchConnectionManager private constructor(private val context: Context) {
             }
         }
         
-        private const val CAPABILITY_WEAR_APP = "kusho_wear_app"
+        private const val CAPABILITY_WEAR_APP = "airphabets_wear_app"
         private const val MESSAGE_PATH_REQUEST_BATTERY = "/request_battery"
         private const val MESSAGE_PATH_REQUEST_DEVICE_INFO = "/request_device_info"
         private const val MESSAGE_PATH_BATTERY_STATUS = "/battery_status"
         private const val MESSAGE_PATH_DEVICE_INFO = "/device_info"
-        private const val MESSAGE_PATH_PING = "/kusho/ping"
-        private const val MESSAGE_PATH_PONG = "/kusho/pong"
+        private const val MESSAGE_PATH_PING = "/airphabets/ping"
+        private const val MESSAGE_PATH_PONG = "/airphabets/pong"
 
         // Pairing handshake message paths
         private const val MESSAGE_PATH_PAIRING_REQUEST = "/pairing_request"
         private const val MESSAGE_PATH_PAIRING_ACCEPTED = "/pairing_accepted"
         private const val MESSAGE_PATH_PAIRING_DECLINED = "/pairing_declined"
-        private const val PREFS_PAIRING = "kusho_pairing"
+        private const val PREFS_PAIRING = "airphabets_pairing"
 
         // Learn Mode message paths
         private const val MESSAGE_PATH_LEARN_MODE_SKIP = "/learn_mode_skip"
@@ -1133,7 +1133,7 @@ class WatchConnectionManager private constructor(private val context: Context) {
                 // The Intent to open the Play Store specifically for YOUR app package
                 val intent = Intent(Intent.ACTION_VIEW)
                     .addCategory(Intent.CATEGORY_BROWSABLE)
-                    .setData(Uri.parse("market://details?id=com.example.kusho"))
+                    .setData(Uri.parse("market://details?id=com.example.airphabets"))
 
                 for (node in nodes) {
                     remoteActivityHelper.startRemoteActivity(
@@ -1505,7 +1505,7 @@ class WatchConnectionManager private constructor(private val context: Context) {
                 "Watch App Installation",
                 NotificationManager.IMPORTANCE_HIGH
             ).apply {
-                description = "Notifications for installing the Kusho watch app"
+                description = "Notifications for installing the Airphabets watch app"
                 enableVibration(true)
             }
             

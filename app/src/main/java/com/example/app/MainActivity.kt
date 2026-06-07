@@ -12,7 +12,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.app.navigation.AppNavigation
 import com.example.app.ui.components.pairing.GlobalPairingModals
 import com.example.app.ui.theme.KushoTheme
-import com.example.kusho.common.MessageService
+import com.example.airphabets.common.MessageService
 import com.google.android.gms.wearable.NodeClient
 import com.google.android.gms.wearable.Wearable
 
