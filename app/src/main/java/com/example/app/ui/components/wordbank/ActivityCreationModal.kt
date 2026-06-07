@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
@@ -295,6 +296,7 @@ private fun EmptyWordBankMessage() {
 /**
  * Suggested prompts section with loading state and clickable chips.
  */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun SuggestedPromptsSection(
     suggestedPrompts: List<String>,
